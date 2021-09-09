@@ -14,6 +14,22 @@
   --icon-fill: #afb1b8;
 }
 
+::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+/* ::-moz-placeholder {
+  font-size: 16px;
+} 
+:-ms-input-placeholder {
+  font-size: 16px;
+} 
+input:-moz-placeholder {
+  font-size: 16px;
+} */
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -742,6 +758,13 @@ svg {
 
 .close-icon {
   fill: currentColor;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .form {
@@ -766,19 +789,70 @@ svg {
   width: 100%;
   margin: 0;
   padding: 10px 20px;
-  padding-left: 40px;
+  padding-left: 42px;
   margin-bottom: 10px;
   font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0, 2);
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label {
+.form-input:focus-within {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-icon {
   position: absolute;
-  top: 48%;
+  top: 36%;
   left: 12px;
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label:focus-within > .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-comment {
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+}
+
+.form-comment:focus-within {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.checkbox-input:checked + .checkbox-style > .checkbox-icon {
+  background-color: var(--accent-color);
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+}
+
+.checkbox-icon {
+  display: inline-block;
+  border: 2px solid var(--title-color);
+  border-radius: 4px;
 }
