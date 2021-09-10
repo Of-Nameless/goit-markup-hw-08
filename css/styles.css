@@ -14,22 +14,6 @@
   --icon-fill: #afb1b8;
 }
 
-::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-
-  color: rgba(117, 117, 117, 0.5);
-}
-/* ::-moz-placeholder {
-  font-size: 16px;
-} 
-:-ms-input-placeholder {
-  font-size: 16px;
-} 
-input:-moz-placeholder {
-  font-size: 16px;
-} */
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -608,6 +592,13 @@ svg {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  padding-left: 16px;
+}
+
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-button {
@@ -618,7 +609,6 @@ svg {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 13px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -627,11 +617,7 @@ svg {
   color: var(--primary-white-color);
   display: flex;
   align-items: center;
-}
-
-.form-icon {
-  display: inline-block;
-  margin-right: 10px;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -876,6 +862,13 @@ svg {
   padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
+}
+
+.form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-comment:focus-within {
