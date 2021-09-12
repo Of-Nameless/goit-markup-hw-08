@@ -813,7 +813,7 @@ svg {
 
 .close-icon:hover,
 .close-icon:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .form {
