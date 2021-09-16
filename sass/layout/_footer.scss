@@ -27,8 +27,10 @@
   margin-top: 20px;
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+.address-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-text {
@@ -42,11 +44,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-footer:hover,
-.link-footer:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-right {
@@ -67,39 +68,35 @@
 .footer-socials {
   display: flex;
   justify-content: center;
-}
+  & .item-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 
-.footer-socials .item-link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-socials {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-socials .item-link:hover,
-.footer-socials .item-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-socials .item-icon {
-  fill: var(--primary-white-color);
-}
-
-.footer-socials .item:not(:last-child) {
-  margin-right: 10px;
+  & .item-link:hover,
+  & .item-link:focus {
+    background-color: var(--accent-color);
+  }
+  & .item-icon {
+    fill: var(--primary-white-color);
+  }
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-form {
@@ -132,16 +129,14 @@
   border-radius: 4px;
   padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-input:focus-within {
-  border-color: var(--accent-color);
-}
-
-.footer-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  &:focus-within {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-button {

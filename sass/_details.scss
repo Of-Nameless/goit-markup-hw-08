@@ -5,10 +5,9 @@
 .details-item {
   display: inline-block;
   width: 270px;
-}
-
-.details-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .details-content {

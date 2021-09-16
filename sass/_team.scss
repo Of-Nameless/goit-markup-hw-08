@@ -71,12 +71,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--accent-color);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--primary-white-color);
+.socials-link {
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .socials-icon,
+  &:focus .socials-icon {
+    fill: var(--primary-white-color);
+  }
 }
