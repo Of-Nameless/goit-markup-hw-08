@@ -104,17 +104,16 @@
 .current {
   position: relative;
   color: var(--accent-color);
-}
+  &::after {
+    content: "";
 
-.current::after {
-  content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: rgba(33, 150, 243, 1);
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(33, 150, 243, 1);
+  }
 }
