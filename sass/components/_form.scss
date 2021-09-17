@@ -39,7 +39,7 @@
     position: relative;
     margin-top: 4px;
     margin-bottom: 10px;
-    &:focus-within > .form-icon {
+    &:focus-within > .form-field__icon {
       fill: var(--accent-color);
     }
   }

@@ -49,10 +49,6 @@ svg {
   fill: var(--icon-fill);
 }
 
-.span-logo {
-  color: var(--accent-color);
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -227,6 +223,10 @@ svg {
   line-height: 1.19;
   color: var(--logo-color);
   text-decoration: none;
+}
+
+.logo-span {
+  color: var(--accent-color);
 }
 
 .logo__footer {
@@ -944,7 +944,7 @@ svg {
   margin-bottom: 10px;
 }
 
-.form-field__label:focus-within > .form-icon {
+.form-field__label:focus-within > .form-field__icon {
   fill: var(--accent-color);
 }
 
