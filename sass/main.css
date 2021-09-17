@@ -272,22 +272,30 @@ svg {
   cursor: pointer;
 }
 
-.details {
+.details-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.details__item {
+.details-style__item {
   display: inline-block;
   width: 270px;
 }
 
-.details__item:not(:last-child) {
+.details-style__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.details__content {
+.details-style__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  color: var(--title-color);
+}
+
+.details-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,14 +309,6 @@ svg {
   height: 120px;
   background-color: var(--secondary-bcg-color);
   margin-bottom: 30px;
-}
-
-.details__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
-  color: var(--title-color);
 }
 
 .work {
