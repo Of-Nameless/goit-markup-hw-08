@@ -449,16 +449,6 @@ svg {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__title {
-  color: var(--primary-white-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,7 +521,7 @@ svg {
           align-items: baseline;
 }
 
-.footer__link {
+.footer-left__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   -webkit-transition-property: color;
@@ -542,12 +532,22 @@ svg {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link:hover, .footer__link:focus {
+.footer-left__link:hover, .footer-left__link:focus {
   color: var(--accent-color);
 }
 
-.footer__right {
+.footer-right {
   margin-left: 70px;
+}
+
+.footer-right__title {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .footer-socials {

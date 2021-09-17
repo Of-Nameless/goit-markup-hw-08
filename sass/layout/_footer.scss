@@ -11,7 +11,7 @@
   align-items: baseline;
 }
 
-.footer__link {
+.footer-left__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
@@ -24,8 +24,18 @@
   }
 }
 
-.footer__right {
+.footer-right {
   margin-left: 70px;
+  &__title {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
 }
 
 .footer-socials {
