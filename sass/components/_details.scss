@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.details-item {
+.details__item {
   display: inline-block;
   width: 270px;
   &:not(:last-child) {
@@ -10,7 +10,7 @@
   }
 }
 
-.details-content {
+.details__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 }
 
-.details-title {
+.details__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

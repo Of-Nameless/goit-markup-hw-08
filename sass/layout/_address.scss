@@ -1,0 +1,14 @@
+.address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.address-style__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address-style__text {
+  color: var(--primary-white-color);
+}

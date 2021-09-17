@@ -1,8 +1,8 @@
-.clients-style {
+.clients {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
   &:not(:last-child) {
@@ -10,7 +10,7 @@
   }
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -27,13 +27,13 @@
     outline: none;
     border-color: var(--accent-color);
   }
-  &:hover .clients-icon,
-  &:focus .clients-icon {
+  &:hover .clients__icon,
+  &:focus .clients__icon {
     fill: var(--accent-color);
   }
 }
 
-.clients-icon {
+.clients__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

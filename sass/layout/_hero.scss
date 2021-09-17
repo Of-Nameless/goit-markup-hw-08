@@ -16,7 +16,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -26,7 +26,7 @@
   color: var(--primary-white-color);
 }
 
-.hero-button {
+.hero__button {
   width: 200px;
   height: 50px;
   border: 2px solid var(--accent-color);

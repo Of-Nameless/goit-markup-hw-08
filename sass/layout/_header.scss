@@ -8,35 +8,21 @@
   }
 }
 
-.main-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
-
-.logo {
-  margin-right: 93px;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  color: var(--logo-color);
-
-  text-decoration: none;
-}
-
 .site {
   display: flex;
 }
 
-.site-item {
+.site__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.site-link {
+.site__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -63,7 +49,7 @@
   align-items: center;
 }
 
-.contact-item {
+.contact__item {
   display: flex;
   align-items: center;
   &:not(:last-child) {
@@ -71,7 +57,7 @@
   }
 }
 
-.contact-link {
+.contact__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -87,16 +73,16 @@
   &:focus {
     color: var(--accent-color);
   }
-  &:focus .icon-mail,
-  &:hover .icon-mail,
-  &:focus .icon-tel,
-  &:hover .icon-tel {
+  &:focus .mail__icon,
+  &:hover .mail__icon,
+  &:focus .tel__icon,
+  &:hover .tel__icon {
     fill: currentColor;
   }
 }
 
-.icon-mail,
-.icon-tel {
+.mail__icon,
+.tel__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
