@@ -75,6 +75,7 @@ svg {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.66;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
 }
@@ -125,7 +126,9 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--title-color);
   text-decoration: none;
   -webkit-transition-property: color;
@@ -171,7 +174,9 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: inherit;
   -webkit-transition-property: color;
@@ -221,6 +226,7 @@ svg {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--logo-color);
   text-decoration: none;
 }
@@ -234,6 +240,7 @@ svg {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-decoration: none;
 }
@@ -254,6 +261,7 @@ svg {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   margin-bottom: 30px;
   color: var(--primary-white-color);
 }
@@ -266,6 +274,7 @@ svg {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -291,6 +300,7 @@ svg {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: var(--title-color);
 }
@@ -347,7 +357,9 @@ svg {
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -386,6 +398,7 @@ svg {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 10px;
   color: var(--title-color);
@@ -619,7 +632,7 @@ svg {
 }
 
 .footer-form__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -645,26 +658,34 @@ svg {
 }
 
 .footer-form__input::-webkit-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form__input:-ms-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form__input::-ms-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form__input::placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -678,6 +699,7 @@ svg {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.03em;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   display: -webkit-box;
@@ -719,17 +741,18 @@ svg {
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter-list__button {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
   background-color: var(--secondary-bcg-color);
@@ -740,7 +763,7 @@ svg {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:focus, .filter-button:hover {
+.filter-list__button:focus, .filter-list__button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
@@ -757,7 +780,7 @@ svg {
   margin-top: -30px;
 }
 
-.card-item {
+.card__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
       flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
@@ -779,12 +802,12 @@ svg {
           box-shadow: var(--card-shadow);
 }
 
-.card-thumb {
+.card-style__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-overlay {
+.card-style__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -793,8 +816,10 @@ svg {
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -803,12 +828,12 @@ svg {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-link {
+.card-style__link {
   text-decoration: none;
 }
 
-.card-link:hover .card-overlay,
-.card-link:focus .card-overlay {
+.card-style__link:hover .card-style__overlay,
+.card-style__link:focus .card-style__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
@@ -820,16 +845,17 @@ svg {
   padding-left: 24px;
 }
 
-.card-text {
-  margin-top: 4px;
-  color: var(--primary-text-color);
-}
-
-.card-title {
+.card-content__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.card-content__text {
+  margin-top: 4px;
+  color: var(--primary-text-color);
 }
 
 .backdrop {
@@ -908,6 +934,7 @@ svg {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
   text-align: center;

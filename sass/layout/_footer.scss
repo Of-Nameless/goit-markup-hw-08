@@ -15,9 +15,7 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -28,10 +26,7 @@
   margin-left: 70px;
   &__title {
     color: var(--primary-white-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14);
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -50,16 +45,12 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background-color);
   }
 }
 
 .footer-socials {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
   &__link:hover,
   &__link:focus {
     background-color: var(--accent-color);
@@ -83,10 +74,7 @@
   }
 
   &__title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14);
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
@@ -105,8 +93,7 @@
       border-color: var(--accent-color);
     }
     &::placeholder {
-      font-size: 16px;
-      line-height: 1.25;
+      @include font(400, 16px, 1.25);
       color: rgba(255, 255, 255, 0.6);
     }
   }
@@ -118,9 +105,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 13px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
+    @include font(700, 16px, 1.875);
 
     background-color: var(--accent-color);
     color: var(--primary-white-color);
