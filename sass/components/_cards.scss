@@ -39,16 +39,17 @@
   overflow: auto;
 
   @include font(400, 18px, 1.56);
-  transform: translateY(100%);
+  transform: translateY(101%);
   @include transition(transform);
 }
 
 .cardset-style__link {
   text-decoration: none;
-  &:hover .cardset-style__overlay,
-  &:focus .cardset-style__overlay {
-    transform: translateY(0%);
-  }
+}
+
+.cardset-style__link:hover .cardset-style__overlay,
+.cardset-style__link:focus .cardset-style__overlay {
+  transform: translateY(0%);
 }
 
 .cardset-style__content {
