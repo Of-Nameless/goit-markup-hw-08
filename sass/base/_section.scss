@@ -1,11 +1,20 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  &__title {
-    margin-bottom: 50px;
-    @include font(700, 36px, 1.66);
-    text-align: center;
+}
 
-    color: var(--title-color);
-  }
+.section__title {
+  margin-bottom: 50px;
+  @include font(700, 36px, 1.66);
+  text-align: center;
+
+  color: var(--title-color);
+}
+
+.section--work {
+  padding-top: 0;
+}
+
+.section--team {
+  background-color: var(--secondary-bcg-color);
 }

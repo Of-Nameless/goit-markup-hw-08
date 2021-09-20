@@ -1,19 +1,15 @@
 .team {
-  background-color: var(--secondary-bcg-color);
-}
-
-.team-style {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
+}
 
-  &__item {
-    flex-basis: calc((100% - 90px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
+.team__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 
-    background-color: var(--primary-white-color);
-  }
+  background-color: var(--primary-white-color);
 }
 
 .team-card {

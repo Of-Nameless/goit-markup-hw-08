@@ -1,17 +1,18 @@
-.card {
+.cardset {
   display: flex;
   flex-wrap: wrap;
 
   margin-left: -30px;
   margin-top: -30px;
-  &__item {
-    flex-basis: calc((100% - 90px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
 }
 
-.card-style {
+.cardset__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.cardset-style {
   border-bottom: 1px solid var(--border-card);
   border-left: 1px solid var(--border-card);
   border-right: 1px solid var(--border-card);
@@ -20,46 +21,50 @@
   &:focus {
     box-shadow: var(--card-shadow);
   }
-  &__thumb {
-    position: relative;
-    overflow: hidden;
-  }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 63px 24px;
-    color: var(--primary-white-color);
-    background-color: rgba(33, 150, 243, 0.9);
-    overflow: auto;
+}
 
-    @include font(400, 18px, 1.56);
-    transform: translateY(100%);
-    @include transition(transform);
-  }
+.cardset-style__thumb {
+  position: relative;
+  overflow: hidden;
+}
 
-  &__link {
-    text-decoration: none;
-    &:hover .card-style__overlay,
-    &:focus .card-style__overlay {
-      transform: translateY(0%);
-    }
+.cardset-style__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+  color: var(--primary-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+
+  @include font(400, 18px, 1.56);
+  transform: translateY(100%);
+  @include transition(transform);
+}
+
+.cardset-style__link {
+  text-decoration: none;
+  &:hover .cardset-style__overlay,
+  &:focus .cardset-style__overlay {
+    transform: translateY(0%);
   }
 }
 
-.card-content {
+.cardset-style__content {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  &__title {
-    @include font(700, 18px, 2);
+}
 
-    color: var(--title-color);
-  }
-  &__text {
-    margin-top: 4px;
-    color: var(--primary-text-color);
-  }
+.cardset-style__title {
+  @include font(700, 18px, 2);
+
+  color: var(--title-color);
+}
+
+.cardset-style__text {
+  margin-top: 4px;
+  color: var(--primary-text-color);
 }

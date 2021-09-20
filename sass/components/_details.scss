@@ -1,21 +1,23 @@
-.details-style {
+.details {
   display: flex;
-  &__item {
-    display: inline-block;
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  &__title {
-    @include font(700, 14px, 1.14);
-    margin-bottom: 10px;
+}
 
-    color: var(--title-color);
+.details__item {
+  display: inline-block;
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
-.details-content {
+.details__title {
+  @include font(700, 14px, 1.14);
+  margin-bottom: 10px;
+
+  color: var(--title-color);
+}
+
+.details__content {
   display: flex;
   justify-content: center;
   align-items: center;
