@@ -1,7 +1,11 @@
 .team {
-  display: flex;
+  display: inline-block;
   margin-left: -30px;
   margin-top: -30px;
+
+  @media screen and (min-width: 481px) {
+    display: flex;
+  }
 }
 
 .team__item {

@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--footer-bcg-color);
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
   padding: 200px 0;
 
@@ -21,6 +21,10 @@
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 1199px) {
+    @include font(900, 26px, 1.62, 0.06em);
+  }
 }
 
 .hero__button {

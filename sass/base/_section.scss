@@ -1,18 +1,31 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 481px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
-  @include font(700, 36px, 1.66);
+  margin-bottom: 30px;
+  @include font(700, 28px, 1.1785);
   text-align: center;
 
   color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.66);
+    margin-bottom: 50px;
+  }
 }
 
 .section--work {
   padding-top: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .section--team {
