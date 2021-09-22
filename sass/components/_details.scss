@@ -8,6 +8,7 @@
 
 .details__item {
   display: inline-block;
+  width: 100vw;
   margin-bottom: 30px;
   // width: 270px;
   &:not(:last-child) {
@@ -28,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 100vw;
   // width: 270px;
   height: 120px;
   background-color: var(--secondary-bcg-color);

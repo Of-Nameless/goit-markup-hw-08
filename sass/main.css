@@ -129,8 +129,10 @@ svg {
 }
 
 .header {
-  height: 80px;
-  display: none;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -156,6 +158,13 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+    height: 80px;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -215,6 +224,13 @@ svg {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+    height: 80px;
+  }
+}
+
 .contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +277,65 @@ svg {
 .contact__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--primary-white-color);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu .mobile-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.mobile-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.mobile-toggle:hover, .mobile-toggle:focus {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-toggle {
+    display: none;
+  }
 }
 
 .logo {
@@ -346,6 +421,7 @@ svg {
 
 .details__item {
   display: inline-block;
+  width: 100vw;
   margin-bottom: 30px;
 }
 
@@ -373,7 +449,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 100vw;
   height: 120px;
   background-color: var(--secondary-bcg-color);
   margin-bottom: 30px;
