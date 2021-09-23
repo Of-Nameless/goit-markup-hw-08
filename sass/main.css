@@ -67,21 +67,18 @@ svg {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -242,7 +239,7 @@ svg {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -251,6 +248,8 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
+    padding: 14px 0;
   }
 }
 
@@ -259,7 +258,14 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -270,10 +276,14 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .contact__link {
@@ -284,9 +294,9 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
   -webkit-transition-property: color;
@@ -299,6 +309,13 @@ svg {
 
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 .contact__link:focus .contact__icon,
@@ -470,11 +487,18 @@ svg {
   margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: var(--logo-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .logo-span {

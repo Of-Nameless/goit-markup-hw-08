@@ -2,11 +2,15 @@
   margin-right: 93px;
 
   font-family: Raleway, sans-serif;
-  @include font(700, 26px, 1.19);
+  @include font(700, 24px, 1.166);
 
   color: var(--logo-color);
 
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  @include font(700, 26px, 1.17);
 }
 
 .logo-span {
