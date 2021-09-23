@@ -10,6 +10,9 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
@@ -43,7 +46,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .mobile-toggle {
     display: none;
   }
@@ -63,6 +66,7 @@
 .mobile-list__link {
   @include font(500, 40px, 1.175, 0.02em);
   color: var(--title-color);
+  text-decoration: none;
 
   &:hover,
   &:focus {
