@@ -538,12 +538,10 @@ svg {
 
 .details__item {
   display: inline-block;
-  width: 100vw;
   margin-bottom: 30px;
 }
 
 .details__item:not(:last-child) {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
