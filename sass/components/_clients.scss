@@ -21,6 +21,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: unset;
+    width: 170px;
+  }
+}
+
 .clients__link {
   width: 100%;
   height: 100%;

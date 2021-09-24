@@ -32,62 +32,60 @@
   }
 }
 
-.form-field {
-  &__label {
-    display: block;
-    position: relative;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    &:focus-within > .form-field__icon {
-      fill: var(--accent-color);
-    }
+.form-field__label {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  &:focus-within > .form-field__icon {
+    fill: var(--accent-color);
   }
+}
 
-  &__input {
-    width: 100%;
-    padding: 10px 20px;
-    padding-left: 42px;
-    font: inherit;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-    @include transition(border-color);
-    &:focus-within {
-      border-color: var(--accent-color);
-      outline: none;
-    }
+.form-field__input {
+  width: 100%;
+  padding: 10px 20px;
+  padding-left: 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  @include transition(border-color);
+  &:focus-within {
+    border-color: var(--accent-color);
+    outline: none;
   }
+}
 
-  &__icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    fill: #000000;
-    transform: translateY(-50%);
-    @include transition(fill);
-  }
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: #000000;
+  transform: translateY(-50%);
+  @include transition(fill);
 }
 
 .form-textarea {
   display: block;
   margin-bottom: 20px;
+}
 
-  &__comment {
-    resize: none;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    @include transition(border-color);
-    &::placeholder {
-      @include font(400, 12px, 1.16);
+.form-textarea__comment {
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  @include transition(border-color);
+  &::placeholder {
+    @include font(400, 12px, 1.16);
 
-      color: rgba(117, 117, 117, 0.5);
-    }
-    &:focus-within {
-      border-color: var(--accent-color);
-      outline: none;
-    }
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus-within {
+    border-color: var(--accent-color);
+    outline: none;
   }
 }
 

@@ -2,8 +2,6 @@
   position: absolute;
   min-width: 450px;
   min-height: 609px;
-  // min-width: 528px;
-  // min-height: 581px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -12,30 +10,38 @@
   top: 50%;
   transform: translate(-50%, -50%);
   @include transition(transform);
-  &__button {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: unset;
-    border-radius: 50%;
-    padding: 0;
+}
 
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
   }
+}
 
-  &__icon {
-    fill: currentColor;
-    cursor: pointer;
-    @include transition(fill);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+.modal__button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: unset;
+  border-radius: 50%;
+  padding: 0;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__icon {
+  fill: currentColor;
+  cursor: pointer;
+  @include transition(fill);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }

@@ -11,13 +11,16 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .details {
+    flex-wrap: unset;
+  }
+}
+
 .details__item {
   display: inline-block;
-  // width: 100vw;
   margin-bottom: 30px;
-  // width: 270px;
   &:not(:last-child) {
-    // margin-right: 30px;
     margin-bottom: 30px;
   }
 }
@@ -27,6 +30,14 @@
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .details__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
