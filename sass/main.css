@@ -45,10 +45,6 @@ img {
   height: auto;
 }
 
-svg {
-  fill: var(--icon-fill);
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -824,6 +820,7 @@ svg {
 }
 
 .socials__icon {
+  fill: var(--icon-fill);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -880,6 +877,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  fill: var(--icon-fill);
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
   -webkit-transition-property: border-color;

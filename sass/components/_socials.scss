@@ -30,5 +30,6 @@
 }
 
 .socials__icon {
+  fill: var(--icon-fill);
   @include transition(fill);
 }
