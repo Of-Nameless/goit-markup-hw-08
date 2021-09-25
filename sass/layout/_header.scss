@@ -8,22 +8,22 @@
   }
 }
 
-.header .container {
+.container.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1200px) {
-  .header .container {
-    justify-content: space-between;
+.header__nav {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    align-items: center;
   }
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-}
 .site-nav {
   display: none;
 }
