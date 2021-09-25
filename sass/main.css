@@ -125,24 +125,12 @@ img {
 }
 
 .header {
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-bottom: 1px solid var(--border-color);
 }
 
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -153,6 +141,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -369,22 +360,14 @@ img {
 
 .mobile-container {
   position: relative;
-  padding: 48px 25px;
+  padding: 48px 40px;
   max-width: 480px;
 }
 
 .mobile-toggle {
   height: 40px;
   width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -406,8 +389,13 @@ img {
 }
 
 .mobile-list {
-  display: block;
-  margin-bottom: 302px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mobile-list__item:not(:last-child) {
@@ -428,8 +416,14 @@ img {
 }
 
 .mobile-contacts {
-  display: block;
-  margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
 }
 
 .mobile-contacts__item:not(:last-child) {
@@ -495,14 +489,21 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
+  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.166;
   letter-spacing: 0.03em;
+  padding: 16px 0;
   color: var(--logo-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

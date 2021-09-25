@@ -37,16 +37,14 @@
 
 .mobile-container {
   position: relative;
-  padding: 48px 25px;
+  padding: 48px 40px;
   max-width: 480px;
 }
 
 .mobile-toggle {
   height: 40px;
   width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
   margin: 0;
   margin-left: auto;
@@ -70,8 +68,10 @@
 }
 
 .mobile-list {
-  display: block;
-  margin-bottom: 302px;
+  // display: block;
+  // margin-bottom: 302px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-list__item {
@@ -92,8 +92,9 @@
 }
 
 .mobile-contacts {
-  display: block;
-  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .mobile-contacts__item {
