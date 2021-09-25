@@ -14,17 +14,19 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    display: block;
+    display: flex;
   }
 }
 
 .footer__cont {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__cont {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     text-align: left;
   }
@@ -206,7 +208,9 @@
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -214,9 +218,6 @@
 
 @media screen and (min-width: 1200px) {
   .footer-form__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 13px;
   }
 }
