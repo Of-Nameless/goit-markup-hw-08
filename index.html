@@ -176,7 +176,15 @@
             <ul class="team">
                 <li class="team__item">
                     <article class="team-card">
-                    <img src="./images/igor.jpg" alt="Igor" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg"
+                        />
+                        <source srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg" media="(min-width:768px)"
+                        />
+                        <source srcset="./images/desktop/img.jpg 1x, ./images/desktop/img@2x.jpg" media="(min-width:1200px)" 
+                        />
+                        <img src="./images/igor.jpg" alt="Igor">
+                    </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Игорь Демьяненко</h3>
                     <p class="team-card__text">Product Designer</p>
@@ -215,7 +223,12 @@
                 </li>
                 <li class="team__item">
                     <article class="team-card">
-                    <img src="./images/olga.jpg" alt="Olga" width="270" height="260"> 
+                        <picture>
+                            <source srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img1@2x.jpg" />
+                            <source srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img1@2x.jpg" media="(min-width:768px)" />
+                            <source srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg" media="(min-width:1200px)" />
+                            <img src="./images/olga.jpg" alt="Olga"> 
+                        </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Ольга Репина</h3>
                     <p class="team-card__text">Frontend Developer</p>
@@ -254,7 +267,12 @@
                 </li>
                 <li class="team__item">
                     <article class="team-card">
-                    <img src="./images/nikolay.jpg" alt="Nikolay" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg" />
+                            <source srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img2@2x.jpg" media="(min-width:768px)" />
+                            <source srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg" media="(min-width:1200px)" />
+                            <img src="./images/nikolay.jpg" alt="Nikolay">
+                        </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Николай Тарасов</h3>
                     <p class="team-card__text">Marketing</p>
@@ -293,7 +311,12 @@
                 </li>
                 <li class="team__item">
                     <article class="team-card">
-                    <img src="./images/mikhail.jpg" alt="Mikhail" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg" />
+                        <source srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img3@2x.jpg" media="(min-width:768px)" />
+                        <source srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg" media="(min-width:1200px)" />
+                        <img src="./images/mikhail.jpg" alt="Mikhail">
+                    </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Михаил Ермаков</h3>
                     <p class="team-card__text">UI Designer</p>
