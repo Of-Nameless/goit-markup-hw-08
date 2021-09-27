@@ -6,8 +6,7 @@
 }
 
 .clients__item {
-  flex-basis: calc((100% - 4 * 15px) / 2);
-  // width: 170px;
+  flex-basis: calc((100% - 60px) / 2);
   height: 92px;
   &:not(:last-child) {
     margin-right: 30px;
@@ -23,8 +22,7 @@
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    flex-basis: unset;
-    width: 170px;
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 

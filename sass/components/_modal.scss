@@ -1,7 +1,7 @@
 .modal {
   position: absolute;
-  min-width: 450px;
-  min-height: 609px;
+  min-width: 95vw;
+  min-height: auto;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -10,12 +10,14 @@
   top: 50%;
   transform: translate(-50%, -50%);
   @include transition(transform);
-}
 
-@media screen and (min-width: 1200px) {
-  .modal {
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: auto;
+  }
+  @media screen and (min-width: 1200px) {
     min-width: 528px;
-    min-height: 581px;
+    min-height: auto;
   }
 }
 

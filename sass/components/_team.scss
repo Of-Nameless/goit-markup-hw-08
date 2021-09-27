@@ -1,11 +1,13 @@
 .team {
-  display: inline-block;
-  margin-left: -30px;
-  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -14,14 +16,14 @@
 }
 
 .team__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-
   background-color: var(--primary-white-color);
-
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -29,22 +31,22 @@
   box-shadow: var(--card-shadow);
   border-radius: 4px;
   overflow: hidden;
+}
 
-  &__content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+.team-card__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-  &__title {
-    @include font(500, 16px, 1.1875);
-    text-align: center;
-    margin-bottom: 10px;
+.team-card__title {
+  @include font(500, 16px, 1.1875);
+  text-align: center;
+  margin-bottom: 10px;
 
-    color: var(--title-color);
-  }
+  color: var(--title-color);
+}
 
-  &__text {
-    text-align: center;
-    margin-bottom: 16px;
-  }
+.team-card__text {
+  text-align: center;
+  margin-bottom: 16px;
 }

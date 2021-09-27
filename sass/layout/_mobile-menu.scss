@@ -35,6 +35,10 @@
 }
 
 .mobile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   position: relative;
   padding: 48px 40px;
   max-width: 480px;
@@ -67,8 +71,6 @@
 }
 
 .mobile-list {
-  // display: block;
-  // margin-bottom: 302px;
   display: flex;
   flex-direction: column;
 }
@@ -94,6 +96,7 @@
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  margin-bottom: 64px;
 }
 
 .mobile-contacts__item {
@@ -129,7 +132,7 @@
 
   &::after {
     content: "";
-    display: inline-block;
+    display: inline-flex;
     width: 1px;
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);

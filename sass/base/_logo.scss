@@ -5,16 +5,10 @@
   color: var(--logo-color);
 
   text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
+  @media screen and (min-width: 768px) {
     margin-right: 93px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
+  @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.17);
   }
 }
@@ -29,10 +23,7 @@
 
   color: var(--primary-white-color);
   text-decoration: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo__footer {
+  @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.17);
   }
 }
