@@ -323,8 +323,8 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: var(--primary-white-color);
-  overflow-y: auto;
-  z-index: 1;
+  overflow: auto;
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -766,16 +766,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
@@ -913,9 +903,6 @@ img {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
   height: 92px;
-}
-
-.clients__item:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -977,7 +964,6 @@ img {
 }
 
 .footer {
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bcg-color);
@@ -1032,6 +1018,7 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -1047,16 +1034,20 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-left {
-    display: block;
-    text-align: center;
     margin-bottom: 60px;
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-left {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .footer_left {
+  .footer-left {
     margin-bottom: 0;
   }
 }
@@ -1076,10 +1067,15 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-right {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-right {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1344,8 +1340,8 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .filter__item {
-    margin-right: 8px;
+  .filter__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -1380,18 +1376,11 @@ img {
           box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.cardset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .cardset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
