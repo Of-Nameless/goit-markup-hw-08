@@ -652,8 +652,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -669,16 +669,13 @@ img {
   margin-bottom: 30px;
 }
 
-.details__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .details__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -781,8 +778,8 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -807,8 +804,8 @@ img {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -899,16 +896,16 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .clients__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
   height: 92px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1391,12 +1388,12 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
-.cardset__item:not(:last-child) {
+.cardset__item {
   margin-bottom: 30px;
 }
 
@@ -1404,8 +1401,9 @@ img {
   .cardset__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1413,8 +1411,7 @@ img {
   .cardset__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
