@@ -665,8 +665,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .details {
-    -ms-flex-wrap: unset;
-        flex-wrap: unset;
     margin-left: 0;
     margin-top: 0;
   }
