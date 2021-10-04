@@ -672,6 +672,9 @@ img {
 
 .details__item {
   display: inline-block;
+}
+
+.details__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -681,6 +684,8 @@ img {
         flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .details__item:not(:last-child) {
     margin-bottom: 0;
   }
 }
@@ -915,21 +920,17 @@ img {
 }
 
 .clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .clients__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
   height: 92px;
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1036,6 +1037,10 @@ img {
   }
 }
 
+.footer__wrapper {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__wrapper {
     display: -webkit-box;
@@ -1043,7 +1048,6 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 60px;
   }
 }
 
@@ -1090,12 +1094,6 @@ img {
 
 .footer-left__link:hover, .footer-left__link:focus {
   color: var(--accent-color);
-}
-
-@media screen and (max-width: 767px) {
-  .footer-right {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1175,13 +1173,18 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__sub {
+    margin-left: 93px;
+  }
+}
+
 .footer-form {
   display: block;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: 93px;
     top: 0;
     left: 0;
   }
@@ -1360,8 +1363,8 @@ img {
 }
 
 .filter__item:not(:last-child) {
-  margin-bottom: 15px;
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1417,7 +1420,7 @@ img {
   }
 }
 
-.cardset__item {
+.cardset__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
