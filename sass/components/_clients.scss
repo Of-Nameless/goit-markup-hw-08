@@ -1,20 +1,15 @@
 .clients {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // margin-top: -30px;
-
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .clients__item {
-  // flex-basis: calc((100% - 60px) / 2);
+  flex-basis: calc((100% - 60px) / 2);
   height: 92px;
-  // margin-left: 30px;
-  // margin-top: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
